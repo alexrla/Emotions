@@ -1,0 +1,58 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700&display=swap');
+
+body {
+  font-family: 'Montserrat', sans-serif;
+}
+
+/* Header */
+header {
+  background: linear-gradient(rgba(0, 0, 0, .4), rgba(0, 0, 0, .5)), url(../imgs/header-img.jpeg) fixed center / cover no-repeat;
+
+  height: 100vh;
+}
+
+
+/* Navbar */
+
+/* Banner */
+.banner {
+  left: 50%;
+
+  position: absolute;
+
+  top: 50%;
+
+  transform: translate(-50%, -50%);
+
+  width: 80%;
+}
+
+.banner-heading {
+  animation-duration: 2s;
+
+  animation-name: anim;
+}
+
+.banner-par {
+  animation-delay: .5s;
+
+  animation-duration: 2s;
+
+  animation-fill-mode: backwards;
+
+  animation-name: anim;
+}
+
+@keyframes anim {
+  0% {
+    opacity: 0;
+
+    transform: translateX(-100px);
+  }
+
+  100% {
+    opacity: 1;
+
+    transform: translateX(0);
+  }
+}
