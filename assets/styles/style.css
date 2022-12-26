@@ -113,3 +113,72 @@ header {
     transform: translateX(0);
   }
 }
+
+/* Services */
+.services {
+  background-color: #151F20;
+}
+
+.underline {
+  border: 3px solid #EEE;
+
+  margin: auto;
+
+  width: 150px;
+}
+
+.bi.bi-journals,
+.bi.bi-gear-fill,
+.bi.bi-watch {
+  font-size: 5rem;
+}
+
+.align {
+  text-align: justify;
+}
+
+@media (max-width: 990px) {
+  .align {
+    text-align: center;
+  }
+}
+
+.fromLeft {
+  animation-duration: 3s;
+
+  animation-name: fromLeft;
+}
+
+.fromRight {
+  animation-duration: 3s;
+
+  animation-name: fromRight;
+}
+
+@keyframes fromLeft {
+  0% {
+    opacity: 0;
+
+    transform: translateX(-120px);
+  }
+
+  100% {
+    opacity: 1;
+
+    transform: translateX(0);
+  }
+}
+
+@keyframes fromRight {
+  0% {
+    opacity: 0;
+
+    transform: translateX(30px);
+  }
+
+  100% {
+    opacity: 1;
+
+    transform: translateX(0);
+  }
+}
