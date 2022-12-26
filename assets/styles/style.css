@@ -234,3 +234,8 @@ header {
 .active-item {
   color: #70AED2;
 }
+
+/* Reviews */
+.reviews {
+  background-color: #151F20;
+}
