@@ -182,3 +182,34 @@ header {
     transform: translateX(0);
   }
 }
+
+/* Essays */
+.card-shadow {
+  box-shadow: 5px 8px 20px #444444;
+}
+
+.heading {
+  background-color: #222;
+
+  cursor: pointer;
+
+  font-size: 14px;
+
+  letter-spacing: 1px;
+
+  opacity: .7;
+
+  position: absolute;
+
+  right: 0;
+
+  top: 70%;
+
+  transition: all .5s;
+
+  width: 70%;
+}
+
+.heading:hover {
+  opacity: 1;
+}
