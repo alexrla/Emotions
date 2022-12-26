@@ -11,8 +11,65 @@ header {
   height: 100vh;
 }
 
-
 /* Navbar */
+.nav-menu {
+  background: linear-gradient(rgba(0, 0, 0, .3), rgba(0, 0, 0, .5));
+
+  padding: 30px;
+
+  transition: all .7s;
+}
+
+.menu-item {
+  color: #EEE;
+
+  font-size: 13px;
+
+  letter-spacing: 1px;
+
+  transition: color .5s;
+}
+
+.menu-item:hover {
+  color: #70AED2;
+}
+
+.line1,
+.line2,
+.line3 {
+  height: 3px;
+
+  margin: 5px;
+
+  transition: all .4s;
+
+  width: 23px;
+}
+
+.change .line1 {
+  transform: rotate(-45deg) translate(-5px, 6px);
+}
+.change .line2 {
+  opacity: 0;
+}
+
+.change .line3 {
+  transform: rotate(45deg) translate(-5px, -6px);
+}
+
+.custom-navbar {
+  background: linear-gradient(rgba(0, 0, 0, .6), rgba(0, 0, 0, .7));
+
+  padding: 5px 30px;
+}
+
+.hamburger-menu:focus {
+  box-shadow: none;
+}
+
+.navbar-active {
+  color:#70AED2;
+}
 
 /* Banner */
 .banner {
