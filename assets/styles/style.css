@@ -239,3 +239,102 @@ header {
 .reviews {
   background-color: #151F20;
 }
+
+/* Budget */
+.card-1,
+.card-2,
+.card-3 {
+  background: linear-gradient(rgba(0, 0, 0, .6), rgba(0, 0, 0, .5)), url(../imgs/pricing-card-bg.jpeg) center / cover no-repeat;
+
+  box-shadow: 7px 18px 50px #555;
+
+  max-width: 400px;
+}
+
+.card-list-item {
+  border-bottom: 1px groove #EEE;
+
+  margin: auto;
+
+  width: 90%;
+}
+
+.price-card-button {
+  border-radius: 25px;
+
+  box-shadow: 5px 8px 18px #000;
+  
+  transition: all .2s;
+
+  width: 150px;
+}
+
+.price-card-button:hover {
+  transform: translateY(-5px);
+}
+
+.moveFromLeft {
+  animation-duration: 2s;
+
+  animation-name: moveFromLeft;
+}
+
+.moveFromRight {
+  animation-duration: 2s;
+  
+  animation-name: moveFromRight;
+}
+
+
+.moveFromBottom{
+  animation-duration: 2s;
+  
+  animation-name: moveFromBottom;
+}
+
+
+@keyframes moveFromLeft {
+  0% {
+    opacity: 0;
+
+    transform: translateX(-100px)
+  }
+
+  100% {
+    opacity: 1;
+    
+    transform: translateX(0)
+  }
+}
+
+@keyframes moveFromRight {
+  0% {
+    opacity: 0;
+
+    transform: translateX(100px)
+  }
+
+  100% {
+    opacity: 1;
+    
+    transform: translateX(0)
+  }
+}
+
+@keyframes moveFromBottom {
+  0% {
+    opacity: 0;
+
+    transform: translateY(100px)
+  }
+
+  100% {
+    opacity: 1;
+    
+    transform: translateX(0)
+  }
+}
+
+.bi.bi-camera2  {
+  font-size: 3rem;
+}
