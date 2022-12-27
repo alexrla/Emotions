@@ -6,14 +6,17 @@ body {
 
 /* Header */
 header {
-  background: linear-gradient(rgba(0, 0, 0, .4), rgba(0, 0, 0, .5)), url(../imgs/header-img.jpeg) fixed center / cover no-repeat;
+  background: linear-gradient(rgba(0, 0, 0, .4), 
+  rgba(0, 0, 0, .5)), 
+  url(../imgs/header-img.jpeg) fixed center / cover no-repeat;
 
   height: 100vh;
 }
 
 /* Navbar */
 .nav-menu {
-  background: linear-gradient(rgba(0, 0, 0, .3), rgba(0, 0, 0, .5));
+  background: linear-gradient(rgba(0, 0, 0, .3), 
+  rgba(0, 0, 0, .5));
 
   padding: 30px;
 
@@ -58,7 +61,8 @@ header {
 }
 
 .custom-navbar {
-  background: linear-gradient(rgba(0, 0, 0, .6), rgba(0, 0, 0, .7));
+  background: linear-gradient(rgba(0, 0, 0, .6), 
+  rgba(0, 0, 0, .7));
 
   padding: 5px 30px;
 }
@@ -244,7 +248,9 @@ header {
 .card-1,
 .card-2,
 .card-3 {
-  background: linear-gradient(rgba(0, 0, 0, .6), rgba(0, 0, 0, .5)), url(../imgs/pricing-card-bg.jpeg) center / cover no-repeat;
+  background: linear-gradient(rgba(0, 0, 0, .6), 
+  rgba(0, 0, 0, .5)), 
+  url(../imgs/pricing-card-bg.jpeg) center / cover no-repeat;
 
   box-shadow: 7px 18px 50px #555;
 
@@ -337,4 +343,90 @@ header {
 
 .bi.bi-camera2  {
   font-size: 3rem;
+}
+
+/* Newsletter */
+.newsletter {
+  background: linear-gradient(105deg, 
+  rgba(21, 31, 32, 1) 0%, 
+  rgba(21, 31, 32, .95) 50%,
+  transparent 50%),
+  url(../imgs/form-img.jpeg) center / cover no-repeat;
+}
+
+.input {
+  background: transparent;
+
+  border-color: transparent;
+
+  border-bottom: 2px solid #CCC;
+
+  border-radius: 0;
+
+  color: #FFF;
+
+  transition: all .5s;
+}
+
+.input:focus {
+  background: transparent;
+
+  border-color: transparent;
+
+  border-bottom: 2px solid #F5593D;
+
+  box-shadow: none;
+
+  color: #FFF;
+}
+
+.submit-button {
+  background-color: #FF593D;
+
+  color: #EEE;
+
+  transition: all .3s;
+}
+
+.submit-button:hover {
+  background-color: #F9793D;
+
+  color: #FFF;
+
+  transform: translateY(-5px);
+}
+
+.label {
+  color: #777;
+
+  display: block;
+
+  font-size: 13px;
+
+  margin-left: 4px;
+
+  margin-top: -70px;
+
+  transition: all .3s;
+}
+
+.input:placeholder-shown + .label {
+  opacity: 0;
+
+  transform: translate(20px, 20px);
+
+  visibility: hidden;
+}
+
+@media (max-width: 992px) {
+  .newsletter {
+    background: linear-gradient(rgba(21, 31, 32, 1), 
+    rgba(21, 31, 32, .95));
+  }
+
+  .newsletter-form {
+    margin: auto;
+
+    width: 80%;
+  }
 }
