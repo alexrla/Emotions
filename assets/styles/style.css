@@ -430,3 +430,30 @@ header {
     width: 80%;
   }
 }
+
+/* Footer */
+.footer-link {
+  color: #EEE;
+
+  font-size: 14px;
+
+  text-decoration: none;
+
+  transition: all .3s;
+}
+
+.footer-link:hover {
+  color: #70AED2;
+
+  text-decoration: underline;
+}
+
+.bi.bi-facebook,
+.bi.bi-instagram,
+.bi.bi-twitter,
+.bi.bi-linkedin,
+.bi.bi-whatsapp {
+  font-size: 1.5rem;
+
+  cursor: pointer;
+}
